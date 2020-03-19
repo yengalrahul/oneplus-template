@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>
+            phone application website
+        </title>
+            <link rel="stylesheet" href="phone.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="one.png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Phone</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Cart</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="6phone.png" class="mobile">
+
+            <div id="circle">
+                <div class="feature one"style="display:flex">
+                 <img src="photography.png" >
+                 <span style="padding-left:10px">
+                    <h1>Camera</h1>
+                 <p><b>16 + 20 MP(R Camera)</p>
+                   <p><b> 16 MP(F Camera)</p>
+                 </p>
+                
+                </span>
+                 
+                </div>
+                <div class="feature two" style="display:flex">
+                <img src="cpu.png">
+               <span style="padding-left:10px">
+                <h1>CPU</h1>
+                <p><b>Qualcomm®</p>
+                  <p><b> Snapdragon ™ 845 </p>
+               </span>
+            </div>
+                <div class="feature three"style="display:flex">
+                <img src="display.png">
+                <span style="padding-left:10px">
+                    <h1>Display</h1>
+                    <p>AMOLED
+                        6.28 "Screen</p>
+                
+                </span>
+               
+            </div>
+                <div class="feature four"style="display:flex">
+                <img src="power.png">
+                <span style="padding-left:10px">
+                    <h1>Battery</h1>
+                    <p> <b>3300 mAh Fast charge</p>
+                
+                    </span>    
+            </div>
+            </div>
+            </div>
+        
+        <div class="controls">
+        <img src="up-arrow.png" id="upbtn">
+        <h3>Features</h3> 
+        <img src="arrow.png" id="downbtn">
+        </div>
+        <script>
+            var circle = document.getElementById("circle")
+            var upbtn = document.getElementById("upbtn")
+            var downbtn = document.getElementById("downbtn")
+           
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        </script>
+
+    </body>
+</html>
